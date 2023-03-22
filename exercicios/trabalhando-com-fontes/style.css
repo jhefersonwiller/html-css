@@ -1,0 +1,18 @@
+@charset "UTF_8";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+    font-family: "Cascadia";
+    src: url(fonts/CascadiaCode.otf) format("opentype"),
+        url(fonts/CascadiaCode.ttf) format("truetype");
+}
+
+h1,
+h2 {
+    font-family: "Cascadia", sans-serif;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}

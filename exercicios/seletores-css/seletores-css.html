@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /*
+       # = id
+       . = class
+       : = pseudo-class
+       :: = pseudo-elemens
+       > = children
+    */
+        body {
+            color: #fff;
+            background-color: darkslategray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            color: dodgerblue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: orangered;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            transition: all 200ms ease-in-out;
+        }
+
+        a:active {
+            color: springgreen;
+        }
+
+        a::after {
+            content: ' [link]';
+            color: aliceblue;
+        }
+
+        .especial::before {
+            content: '>>';
+        }
+
+        div>p {
+            background-color: cadetblue;
+            color: #fff;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        div>p:hover {
+            background-color: #2b8f65;
+            transition: all 200ms ease;
+        }
+    </style>
+
+    <title>Seletores</title>
+
+</head>
+
+<body>
+    <h1>Seletores Personalizados</h1>
+    <p>Para abrir as páginas basta clicar nos links abaixo.</p>
+    <ul>
+        <li><a href="https://youtube.com" target="_blank" rel="external" class="especial">Youtube</a></li>
+        <li><a href="https://google.com" target="_blank" rel="external">Google</a></li>
+        <li><a href="https://github.com" target="_blank" rel="external">GitHub</a></li>
+    </ul>
+    <div>
+        <p>Espero que tenha gostado!</p>
+    </div>
+</body>
+
+</html>

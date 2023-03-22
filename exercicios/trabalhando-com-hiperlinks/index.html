@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <!--a: âncora | href: hypertext reference | parâmetro target: Alvo | rel: relativo a-->
+    <p>Você pode <a href="https://youtube.com" target="_blank" rel="external">acessar o Youtube aqui.</a></p>
+    
+    <h1>Usando Links Internos</h1>
+    <p>Esta é a primeira página. Abra o link a seguir caso queira acessar a <a href="pag02.html" rel="next">segunda página do site</a>.</p>
+    <p>A terceira pagina<a href="pag03/pag03.html" rel="next"> fica aqui.</a>
+    </p>
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="../arquivos/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em pdf</a></li>
+        
+        <li><a href="../arquivos/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar o livro em zip</a></li>
+    </ul>
+
+    <h2>Sobre a Tag "a href"</h2>
+    <dl>
+        <dt>a</dt>
+        <dd>Âncora.</dd>
+        <dt>href</dt>
+        <dd>hypertext reference.</dd>
+        <dt>hreflang="en"</dt>
+        <dd>Usado para indicar qual é o idioma principal para onde o link está direcionando.</dd>
+    </dl>
+    <h3>Parâmetros da Tag</h3>
+    <dl>
+        <dt><strong>target</strong></dt>
+        <dd>Link alvo</dd>
+        <dt><strong>rel</strong></dt>
+        <dd>Relativo a</dd>
+        <ul>
+            <li>Opções do parâmetro "rel"</li>
+            <ul type="square">
+              <li><strong>external</strong>: Para links externos de terceiros.</li>
+              <li><strong>next</strong>: Link para uma próxima página do seu site.</li>
+              <li><strong>prev</strong>: Link para uma página anterior do seu site.</li>
+              <li><strong>nofollow</strong>: Link para página de terceiros onde o SEO não deve dar importância.</li>
+              <li><strong>author:</strong>: Link para página do autor do artigo atual.</li><br>
+            </ul>
+            <li>Opções do parâmetro "target"</li>
+            <ul type="square">
+              <li><strong>_blank</strong>: Abre o link em uma nova aba.</li>
+              <li><strong>_self</strong>: Abre o link na aba atual (usado quando a naveção deve ser mantida no site).</li>
+        </ul>
+    </dl>
+</body>
+</html>
