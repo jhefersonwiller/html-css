@@ -2,24 +2,31 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap");
 
-/* font-family: 'Passion One', cursive;
-font-family: 'Sriracha', cursive; */
-
 * {
     margin: 0px;
     padding: 0px;
 }
 
+:root {
+    --fonte1: "Passion One", cursive;
+    --fonte2: "Sriracha", cursive;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
 header {
     background-color: #000;
     color: #fff;
-    font-family: "Passion One", cursive;
+    font-family: var(--fonte1);
     text-align: center;
     padding: 15px;
 }
 
 header > h1 {
-    text-transform: uppercase;
+    font-variant: small-caps;
 }
 
 header p {
@@ -36,8 +43,7 @@ header a:hover {
 }
 
 main {
-    padding: 30px 0 30px 0;
-    font-family: "Sriracha", cursive;
+    font-family: var(--fonte2);
 }
 
 p {
@@ -49,14 +55,13 @@ p {
 div {
     padding: 20px 20px 20px 0px;
     box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.35);
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 div > p {
+    display: inline-block;
     border-radius: 0 3px 3px 0;
-    width: 300px;
     padding: 15px;
     color: #fff;
     backdrop-filter: blur(2px);
