@@ -16,6 +16,23 @@
             width: 350px;
         }
 
+        caption {
+            padding-bottom: 10px;
+        }
+
+        /* Rolagem do cabeçalho junto à tabela */
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: #d3d3d3;
+        }
+
+        /* Efeito zebrado na tabela */
+        tbody>tr:nth-child(2n) {
+            /*even/2n = par | odd/2n-1 = impar*/
+            background-color: #b7ceff;
+        }
+
         thead,
         tfoot {
             background-color: #d3d3d3;
@@ -40,6 +57,7 @@
     <!-- 
         Anatomia de Tabelas Grandes
         Table
+            Caption
             THEAD
                 TR, TH, TD
             TBODY
@@ -48,10 +66,11 @@
                 TR, TH, TD
      -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -95,14 +114,39 @@
                 <td>Santa Catarina</td>
                 <td class="num">7 762 154</td>
             </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 950 976</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 800 605</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 108 508</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 030 961</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>000 000 000</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque dolores maiores praesentium,
+        porro dolorem quasi repellendus aliquam. Dignissimos dolorum adipisci repudiandae, inventore alias eius
+        blanditiis. Sapiente quae eligendi alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque dolores maiores praesentium,
+        porro dolorem quasi repellendus aliquam. Dignissimos dolorum adipisci repudiandae, inventore alias eius
+        blanditiis. Sapiente quae eligendi alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque dolores maiores praesentium,
+        porro dolorem quasi repellendus aliquam. Dignissimos dolorum adipisci repudiandae, inventore alias eius
+        blanditiis. Sapiente quae eligendi alias.</p>
 </body>
 
 </html>
