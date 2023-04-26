@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do iframe</title>
+
+    <style>
+        * {
+            border: 0px;
+            padding: 0px;
+        }
+
+        body {
+            line-height: 1.5em;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding-left: 20px;
+        }
+
+        li>a {
+            color: #6b5ccc;
+            text-decoration: none;
+        }
+
+        li>a:hover {
+            text-decoration: underline;
+            color: #cc1616;
+        }
+
+        p {
+            text-indent: 1.5em;
+        }
+
+        iframe {
+            border: 1px solid #000;
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Faça uma escolha!</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ad quidem quae repellendus facere inventore
+        ipsum
+        quibusdam ipsa culpa et, voluptates, nihil eius aperiam dignissimos nisi harum laudantium eum quisquam?
+    </p>
+
+    <nav>
+        <ul>
+            <li><a href="paginas-extras/pag01.html" target="frame">Pagina 1</a></li>
+            <li><a href="paginas-extras/pag02.html" target="frame">Pagina 2</a></li>
+            <li><a href="paginas-extras/pag03.html" target="frame">Pagina 3</a></li>
+        </ul>
+    </nav>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellendus eveniet aliquid corrupti aut fuga.
+        Unde quibusdam tempore doloremque maiores quae numquam id rerum mollitia commodi harum. Aut, non quam!
+    </p>
+
+    <iframe name="frame" src="" frameborder="0">
+
+    </iframe>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellendus obcaecati cumque earum beatae sunt
+        repellat est? Vel voluptate voluptates iusto odio. Impedit, velit. At culpa minus pariatur aliquid dolorem!
+    </p>
+</body>
+
+</html>
