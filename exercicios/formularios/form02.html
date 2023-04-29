@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #1e90ff;
+        }
+
+        div {
+            padding: 5px 0;
+        }
+
+        label {
+            display: block;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .form input {
+            outline: none;
+            border-radius: 10px;
+            height: 20px;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div id="form-user" class="form">
+            <label for="iuser">Usuário:</label>
+            <input type="text" name="user" id="iuser" placeholder="Digite seu usuário" required autocomplete="username"
+                minlength="8" maxlength="15">
+        </div>
+        <div id="form-pass" class="form">
+            <label for="ipass">Senha:</label>
+            <input type="password" name="pass" id="ipass" placeholder="Digite sua senha" required
+                autocomplete="current-password" minlength="8" maxlength="15">
+        </div>
+        <div class="form-btn">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+
+</html>
