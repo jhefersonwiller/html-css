@@ -20,7 +20,13 @@
 
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+
+    <!-- Form | Parametros:
+        action= envia os dados do form
+        method= GET: mostra os dados de envio do form na URL (padrão) POST: esconde os dados de envio do form na URL
+        autocomplete: On/Off: Mostra ou não a caixa de preenchimento automático.
+    -->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome">
