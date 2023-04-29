@@ -32,7 +32,10 @@
 
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <!-- Em um formulário, sempre usar o parâmetro
+        method="post" ao usar dados sensíveis -->
+
+    <form action="cadastro.php" method="post" autocomplete="on">
         <div id="form-user" class="form">
             <label for="iuser">Usuário:</label>
             <input type="text" name="user" id="iuser" placeholder="Digite seu usuário" required autocomplete="username"
