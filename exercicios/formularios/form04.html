@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Testando funcionalidades</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome completo">
+            </div>
+            <div>
+                <label for="imail">E-mail: </label>
+                <input type="email" name="mail" id="imail" required autocomplete="email"
+                    placeholder="Seu melhor e-mail">
+            </div>
+            <div>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel-national" placeholder="(00)98765-4321"
+                    pattern="^\(\d{2}\)\d{5}-\d{4}$">
+                <!--Estudar expressões regulares (RegEx)
+                        O parâmetro Pattern indica a expressão que deve ser aceita.
+                        O "^" abre a expressão e o "$" fecha.
+                        O símbolo "\" inicia a expressão-->
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+
+</html>
