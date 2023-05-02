@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Estilo para impressão */
+
+html,
+body {
+    width: 100vw;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+menu {
+    display: none;
+}
+
+article p {
+    line-height: 1.5em;
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+article::after {
+    content: "Essa atividade foi realizado por Jheferson Willer";
+}
