@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Meu Site</h1>
     </header>
-    <nav>
+    <span class="material-icons" onclick="clickMenu()">menu</span>
+    <nav id="nav">
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">História</a></li>
@@ -57,6 +59,15 @@
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (nav.style.display == 'block') {
+                nav.style.display = 'none'
+            } else {
+                nav.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 
 </html>
