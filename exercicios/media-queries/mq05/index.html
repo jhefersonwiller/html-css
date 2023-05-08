@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body onresize="resize()">
     <header>
         <h1>Meu Site</h1>
     </header>
@@ -60,6 +60,14 @@
         </article>
     </main>
     <script>
+        function resize() {
+            if (window.innerWidth >= '768') {
+                nav.style.display = 'block'
+            } else {
+                nav.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (nav.style.display == 'block') {
                 nav.style.display = 'none'

@@ -45,7 +45,9 @@
         text-decoration: none;
         font-weight: bold;
         padding: 8px;
+        border-bottom: 1px solid transparent;
     }
+
     nav a:hover {
         background-color: #1e90f7;
     }
@@ -72,12 +74,31 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     span.material-icons {
         display: block;
     }
 
     nav {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        text-align: left;
+    }
+
+    nav li {
+        display: inline-block;
+        border: none;
+    }
+
+    nav a {
+        padding: 8px 15px;
+    }
+
+    nav a:hover {
+        border-bottom: 1px solid #000;
     }
 }
