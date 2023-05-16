@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.item {
+    background-color: #00997f;
+    flex: 1;
+    margin: 5px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
